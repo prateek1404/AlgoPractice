@@ -1,0 +1,17 @@
+k = raw_input()
+l = list(k)
+
+result=[]
+spaceFound=False
+for i in range(0,len(l)):
+    if spaceFound==False and l[i]==' ':
+        spaceFound= True
+        result.append(' ')
+    elif l[i]!=' ':
+        spaceFound=False
+    if spaceFound==False:
+        result.append(l[i])
+print result;
+print "".join(result)
+
+
