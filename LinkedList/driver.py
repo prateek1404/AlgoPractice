@@ -9,8 +9,9 @@ for i in range(1,5):
 	#if nlist[i].next!= None:
 		#print nlist[i].next.value
 list = LinkedList(nlist[0])
-list.printList()	
+#list.printList()	
 #list.printMiddle()
 print list.detectCycle()
 list.reverse()
 list.printList()
+print list.getNthNode(3)

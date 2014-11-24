@@ -44,4 +44,17 @@ class LinkedList:
 			prev = current
 			current = temp
 		self.head= prev
-	
+	def getNthNode(self,N):
+		head1 = self.head
+		N=N-1
+		while N!=0:
+			if head1==None:
+				break
+			head1= head1.next
+			N-=1
+		if head1!=None:
+			print "returning answer"
+			return head1.value
+		else:
+			return
+			
