@@ -1,0 +1,3068 @@
+/System/Library/Frameworks/Python.framework/Versions/2.6/bin/python2.6 "/Users/prateek/UCI Fall 2014/Intro to AI/Kakuro/main/input.py"
+['-1', '17:', '9:']
+[':16', '0', '0']
+['0', '0', '0']
+[[-1, -1, -1], [-1, -1, -1], [-1, -1, -1]]
+--------------
+-1 domain: []
+17: domain: []
+9: domain: []
+--------------
+:16 domain: []
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+--------------
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Starting problem formulation
+--------------
+-1 domain: []
+17: domain: []
+9: domain: []
+--------------
+:16 domain: []
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+--------------
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+Found constraint node
+i = 0
+j = 1
+Reducing domain for cells in the same column
+offset= 1
+offset= 1
+--------------
+-1 domain: []
+17: domain: []
+9: domain: []
+--------------
+:16 domain: []
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+--------------
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+row_constraint -1
+Found constraint node
+i = 0
+j = 2
+Reducing domain for cells in the same column
+offset= 1
+offset= 1
+--------------
+-1 domain: []
+17: domain: []
+9: domain: []
+--------------
+:16 domain: []
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8]
+--------------
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8]
+row_constraint -1
+Found constraint node
+i = 1
+j = 0
+--------------
+-1 domain: []
+17: domain: []
+9: domain: []
+--------------
+:16 domain: []
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8]
+--------------
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8]
+row_constraint 16
+Reducing domain for cells in the same row
+offset= 1
+--------------
+-1 domain: []
+17: domain: []
+9: domain: []
+--------------
+:16 domain: []
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8]
+--------------
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+0 domain: [1, 2, 3, 4, 5, 6, 7, 8]
+5
+Creating constraint graph
+Traversing constraints in the same column
+row_constraint -1
+Traversing constraints in the same column
+row_constraint -1
+row_constraint 16
+Traversing constraints in the same row
+================
+[]
+--------------
+[]
+--------------
+[]
+--------------
+================
+[]
+--------------
+[(2, 1), (1, 2)]
+lef constraint==>(1, 0)
+top constraint==>(0, 1)
+--------------
+[(2, 2), (1, 1)]
+lef constraint==>(1, 0)
+top constraint==>(0, 2)
+--------------
+================
+[]
+lef constraint==>None
+top constraint==>None
+--------------
+[(1, 1)]
+lef constraint==>None
+top constraint==>(0, 1)
+--------------
+[(1, 2)]
+lef constraint==>None
+top constraint==>(0, 2)
+--------------
+Solving KAKURO
+selected for DFS
+i= 1
+j=1
+Assigning domain value as 1
+Constraint not violated
+selected for DFS
+i= 1
+j=2
+Assigning domain value as 2
+Constraint not violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 1
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 2
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 3
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 4
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 5
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 6
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 7
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 8
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 9
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 1
+j=2
+Assigning domain value as 3
+Constraint not violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 1
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 2
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 3
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 4
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 5
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 6
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 7
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 8
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 9
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 1
+j=2
+Assigning domain value as 4
+Constraint not violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 1
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 2
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 3
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 4
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 5
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 6
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 7
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 8
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 9
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 1
+j=2
+Assigning domain value as 5
+Constraint not violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 1
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 2
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 3
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 4
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 5
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 6
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 7
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 8
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 9
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 1
+j=2
+Assigning domain value as 6
+Constraint not violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 1
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 2
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 3
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 4
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 5
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 6
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 7
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 8
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 9
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 1
+j=2
+Assigning domain value as 7
+Constraint not violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 1
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 2
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 3
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 4
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 5
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 6
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 7
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 8
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 9
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 1
+j=2
+Assigning domain value as 8
+Constraint not violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 1
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 2
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 3
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 4
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 5
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 6
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 7
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 8
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 2
+j=0
+Assigning domain value as 9
+Constraint not violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 8
+Constraint violated
+selected for DFS
+i= 2
+j=1
+Assigning domain value as 9
+Constraint violated
+selected for DFS
+i= 1
+j=1
+Assigning domain value as 2
+Constraint violated
+selected for DFS
+i= 1
+j=1
+Assigning domain value as 3
+Constraint violated
+selected for DFS
+i= 1
+j=1
+Assigning domain value as 4
+Constraint violated
+selected for DFS
+i= 1
+j=1
+Assigning domain value as 5
+Constraint violated
+selected for DFS
+i= 1
+j=1
+Assigning domain value as 6
+Constraint violated
+selected for DFS
+i= 1
+j=1
+Assigning domain value as 7
+Constraint violated
+selected for DFS
+i= 1
+j=1
+Assigning domain value as 8
+Constraint not violated
+selected for DFS
+i= 1
+j=1
+Assigning domain value as 9
+Constraint violated
+--------------
+-1 domain: []
+17: domain: []
+9: domain: []
+--------------
+:16 domain: []
+9 domain: [1]
+8 domain: []
+--------------
+9 domain: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+9 domain: []
+0 domain: [1]
+
+Process finished with exit code 0
+

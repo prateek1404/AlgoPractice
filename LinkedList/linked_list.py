@@ -124,4 +124,31 @@ class LinkedList:
 		while fast!= None and fast.next!= None:
 			slow = slow.next
 			fast = fast.next.next
-		print slow.value	
+		print slow.value
+	
+	def splitIntoTwo(self):
+		head = self.head
+		slow = self.head
+		fast = self.head
+		
+		while fast.next!= head and fast.next.next!=head:
+			fast = fast.next.next
+			slow = slow.next
+		
+		if fast.next.next==head:
+			fast = fast.next
+		head1 = head
+		head2= slow.next
+		slow.next= head1
+		fast.next = head2
+		return head1,head2
+	
+	def printCircularLinkedList(self,head1):
+		head = head1
+		fast= head.next
+		print head.value
+		while fast!=head:
+			print fast.value
+			fast = fast.next
+
+			
