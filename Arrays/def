@@ -1,0 +1,7 @@
+def mergeSort(ar,start,end):
+	if start<end:
+		mid = (start+end)/2
+		mergeSort(ar,start,mid)
+		mergeSort(ar,mid+1,end)
+		merge(ar,start,mid,end)
+

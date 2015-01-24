@@ -1,0 +1,8 @@
+Exception in thread "main" java.lang.NullPointerException
+	at Adjacent.adjacent(Adjacent.java:36)
+	at Adjacent.adjacent(Adjacent.java:42)
+	at Adjacent.adjacent(Adjacent.java:42)
+	at Adjacent.adjacent(Adjacent.java:42)
+	at Adjacent.adjacent(Adjacent.java:42)
+	at Adjacent.adjacent(Adjacent.java:42)
+	at Adjacent.main(Adjacent.java:16)

@@ -35,7 +35,18 @@ class LinkedList
 		}
 	
 	}
-	
+	public Node reverseList(Node head)
+	{
+		if(head.next==null)
+		{
+			return head;
+		}
+		Node right = head.next;
+		head.next = null;
+		Node temp = reverseList(right);
+		right.next = head;
+		return temp;
+	}	
 
 }
 
